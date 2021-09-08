@@ -4,10 +4,10 @@
 
 {
     "name": "E-Invoice For VAT and Zakat in KSA",
-    "summary": "Add IBAN QR Code on Invoice for scanning in mobile banking apps",
+    "summary": "E-Invoice For VAT and Zakat in KSA",
     "version": "0.1",
-    "author": "Openworx",
-    "website": "https://www.openworx.nl",
+    "author": "Osman Alrasheed",
+    "website": "https://www.snit.sa",
     'category': 'Accounting',
     "depends": ['base','account','sale_management'],
     "data": [
