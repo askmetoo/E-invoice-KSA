@@ -9,7 +9,7 @@
     "price" : "90",
     "currency" : "USD",
     "author": "Osman Alrasheed",
-    "website": "https://www.snit.sa",
+    "website": "https://www.linkedin.com/in/osman-alrasheed-31a09a159/",
     'category': 'Accounting',
     "depends": ['base','account','sale_management'],
     "data": [
