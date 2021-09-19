@@ -3,8 +3,8 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
 {
-    "name": "E-Invoice For VAT and Zakat in KSA",
-    "summary": "E-Invoice For VAT and Zakat in KSA",
+    "name": "E-Invoice KSA",
+    "summary": "E-Invoice  KSA",
     "version": "14.0",
     "price" : "90",
     "currency" : "USD",
