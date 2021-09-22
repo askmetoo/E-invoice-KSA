@@ -5,7 +5,7 @@
 {
     "name": "E-Invoice For VAT and Zakat in KSA",
     "summary": "E-Invoice For VAT and Zakat in KSA",
-    "version": "14.0",
+    "version": "13.0",
     "price" : "90",
     "currency" : "USD",
     "author": "Osman Alrasheed",
