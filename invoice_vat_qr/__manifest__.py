@@ -18,7 +18,7 @@
         'reports/report_invoice.xml',
     ],
     "license": "LGPL-3",
-    'images': ['images/ibanqr.png'],
+    'images': ['static/description/images/ibannr.png'],
     "installable": True,
     "application": False,
 }
