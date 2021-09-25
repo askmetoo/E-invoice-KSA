@@ -351,7 +351,7 @@
                     </table>
                     <br/>
 
-                    <table class="report_table" style="width: 100% ! important;font-size:14px">
+                    <table class="report_table" style="width: 100% ! important;font-size:14px" >
                         <tr style="text-align:right;">
                             <td style="text-align:center;color:#875A7B;! important;width: 49%">
 
@@ -368,7 +368,7 @@
                             </td>
                         </tr>
                     </table>
-                    <table class=" report_table"
+                    <table class=" report_table" t-if="o.move_type == 'out_invoice'"
                            style="width: 100% ! important;font-size:12px ! important;text-align:center;">
 
                         <tr style="text-align:center;">
@@ -388,9 +388,9 @@
                             <td style="text-align:right;color:#875A7B;! important;border:none;">
                                 <span t-esc="o.partner_id.name"/>
                                 <br/>
-                                <span t-esc="o.partner_id.street"/>
+                                <span t-esc="o.partner_id.building_no"/>
                                 <br/>
-                                <span t-esc="o.partner_id.street2"/>
+                                <span t-esc="o.partner_id.street"/>
                                 <br/>
                                 <span t-esc="o.partner_id.city"/>
                                 <br/>
@@ -432,11 +432,135 @@
                                 <strong>الرمز البريدي:</strong>
                             </td>
                             <td style="text-align:right;color:#875A7B;! important;border:none;" class="o_price_total">
+                                <span t-esc="o.company_id.name"/>
+                                <br/>
+                                <span t-esc="o.company_id.street"/>
+                                <br/>
+                                <span t-esc="o.company_id.street2"/>
+                                <br/>
+                                <span t-esc="o.company_id.city"/>
+                                <br/>
+                                <span t-esc="o.company_id.vat"/>
+                                <br/>
+                                <span t-esc="o.company_id.zip"/>
+                            </td>
+                            <td style="text-align:left;! important;border:none;">
+                                <strong>:Name</strong>
+                                <br/>
+                                <strong>:Building No</strong>
+                                <br/>
+                                <strong>:Street</strong>
+                                <br/>
+                                <strong>:City</strong>
+                                <br/>
+                                <strong>:Vat Number</strong>
+                                <br/>
+
+                                <strong>:Postal Code</strong>
+                                <br/>
+                                <strong>:Other Buyer ID</strong>
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+                    <table class=" report_table" t-if="o.move_type == 'in_invoice'"
+                           style="width: 100% ! important;font-size:12px ! important;text-align:center;">
+
+                        <tr style="text-align:center;">
+                            <td style="text-align:right;! important;border:none;">
+                                <strong>الاسم:</strong>
+                                <br/>
+                                <strong>رقم المبني :</strong>
+                                <br/>
+                                <strong>إسم الشارع:</strong>
+                                <br/>
+                                <strong>المدينة:</strong>
+                                <br/>
+                                <strong>رقم تسجيل ضريبة القيمة المضافة:</strong>
+                                <br/>
+                                <strong>الرمز البريدي:</strong>
+                            </td>
+
+                            <td style="text-align:right;color:#875A7B;! important;border:none;" class="o_price_total">
+                                <span t-esc="o.company_id.name"/>
+                                <br/>
+                                <span t-esc="o.company_id.street"/>
+                                <br/>
+                                <span t-esc="o.company_id.street2"/>
+                                <br/>
+                                <span t-esc="o.company_id.city"/>
+                                <br/>
+                                <span t-esc="o.company_id.vat"/>
+                                <br/>
+                                <span t-esc="o.company_id.zip"/>
+                            </td>
+<!--                            <td style="text-align:right;color:#875A7B;! important;border:none;">-->
+<!--                                <span t-esc="o.partner_id.name"/>-->
+<!--                                <br/>-->
+<!--                                <span t-esc="o.partner_id.building_no"/>-->
+<!--                                <br/>-->
+<!--                                <span t-esc="o.partner_id.street"/>-->
+<!--                                <br/>-->
+<!--                                <span t-esc="o.partner_id.city"/>-->
+<!--                                <br/>-->
+<!--                                <span t-esc="o.partner_id.vat"/>-->
+<!--                                <br/>-->
+<!--                                <span t-esc="o.partner_id.zip"/>-->
+<!--                            </td>-->
+                            <!--                            <td style="text-align:right;! important;border:none;">-->
+                            <!--                                <span  t-esc="o.partner_id.name"/>-->
+                            <!--                                <br/>-->
+                            <!--                                <span  t-esc="o.partner_id.vat"/>-->
+                            <!--                            </td>-->
+                            <td style="text-align:left;! important;border:none;">
+                                <strong>:Name</strong>
+                                <br/>
+                                <strong>:Building No</strong>
+                                <br/>
+                                <strong>:Street</strong>
+                                <br/>
+                                <strong>:City</strong>
+                                <br/>
+                                <strong>:Vat Number</strong>
+                                <br/>
+                                <strong>:Postal Code</strong>
+                                <br/>
+                                <strong>:Other Buyer ID</strong>
+                            </td>
+                            <td style="text-align:right;! important;border:none;" class="o_price_total">
+                                <strong>الاسم:</strong>
+                                <br/>
+                                <strong>رقم المبني :</strong>
+                                <br/>
+                                <strong>إسم الشارع:</strong>
+                                <br/>
+                                <strong>المدينة:</strong>
+                                <br/>
+                                <strong>رقم تجيل ضريبة القيمة المضافة:</strong>
+                                <br/>
+                                <strong>الرمز البريدي:</strong>
+                            </td>
+<!--                            <td style="text-align:right;color:#875A7B;! important;border:none;" class="o_price_total">-->
+<!--                                <span t-esc="o.company_id.name"/>-->
+<!--                                <br/>-->
+<!--                                <span t-esc="o.company_id.street"/>-->
+<!--                                <br/>-->
+<!--                                <span t-esc="o.company_id.street2"/>-->
+<!--                                <br/>-->
+<!--                                <span t-esc="o.company_id.city"/>-->
+<!--                                <br/>-->
+<!--                                <span t-esc="o.company_id.vat"/>-->
+<!--                                <br/>-->
+<!--                                <span t-esc="o.company_id.zip"/>-->
+<!--                            </td>-->
+                            <td style="text-align:right;color:#875A7B;! important;border:none;">
                                 <span t-esc="o.partner_id.name"/>
                                 <br/>
-                                <span t-esc="o.partner_id.street"/>
+                                <span t-esc="o.partner_id.building_no"/>
                                 <br/>
-                                <span t-esc="o.partner_id.street2"/>
+                                <span t-esc="o.partner_id.street"/>
                                 <br/>
                                 <span t-esc="o.partner_id.city"/>
                                 <br/>
@@ -553,9 +677,9 @@
                                             <span t-field="line.product_uom_id" groups="uom.group_uom"/>
                                         </td>
                                         <td class="text-center ">
-                                            <span class="text-nowrap" t-field="line.price_subtotal"
+                                            <span class="text-nowrap" t-esc="line.price_unit * line.quantity "
                                                   groups="account.group_show_line_subtotals_tax_excluded"/>
-                                            <span class="text-nowrap" t-esc="line.price_total - 30"
+                                            <span class="text-nowrap" t-esc="line.price_unit * line.quantity "
                                                   groups="account.group_show_line_subtotals_tax_included"/>
                                         </td>
                                         <td
