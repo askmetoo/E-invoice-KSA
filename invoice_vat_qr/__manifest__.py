@@ -6,7 +6,7 @@
     "name": "E-Invoice KSA",
     "summary": "E-Invoice  KSA",
     "version": "14.0",
-    "price" : "90",
+    "price" : "0.1",
     "currency" : "USD",
     "author": "Osman Alrasheed",
     "website": "https://www.linkedin.com/in/osman-alrasheed-31a09a159/",
